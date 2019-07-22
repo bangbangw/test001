@@ -20,7 +20,14 @@ public class TestStackOverflowErrorDemo {
      */
     public void stackLeak() {
         stackLength++;
+        int a=1;
+        int b=2;
+        int c=3;
+        int d=4;
+        int e=5;
+        //.......创建大量的局部变量
         stackLeak();
+        int all=a+b+c+d+e;
     }
 
     /**
